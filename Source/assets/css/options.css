@@ -53,10 +53,10 @@
     top: -10px
 }
 #image_scanner_box {
-	width: 185px;
+	width: 231px;
 	padding: 0px 20px 5px 0px
 }
-#image_replacement_box  { margin-left: 15px }
+#image_replacement_box  { margin-left: 24px }
 #image_settings_box,
 #image_pixelization_box {
     margin-left: 25px;

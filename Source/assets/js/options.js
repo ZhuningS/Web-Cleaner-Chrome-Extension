@@ -24,7 +24,7 @@ var opt, password = '';
 
 // This function updates an html element to show the change in a the slider bar value for the image scanner sensitivity.
 function showValue() {
-	document.getElementById('range2').innerHTML = document.getElementById("scanner_sensitivity").value + '%';
+	document.getElementById('range2').innerHTML = document.getElementById("scanner_sensitivity").value + '% Nudity';
 }
 
 function show_options() {
