@@ -142,7 +142,7 @@
 	padding: 2px 5px 5px 5px;
     width: 120px;
     float: left;
-	border: 0.5px solid #D1D1D1;
+	border: 0.5px solid #EFEFEF;
 	-webkit-box-shadow: 0.5px 0.5px #D3D3D3
 }
 .reportCommon_Right {
@@ -151,7 +151,7 @@
 	width: 120px;
     display: inline-block;
     float: left;
-	border: 0.5px solid #D1D1D1;
+	border: 0.5px solid #EFEFEF;
 	-webkit-box-shadow: 0.5px 0.5px #D3D3D3
 }
 .reportCommon span.hlBlue {
