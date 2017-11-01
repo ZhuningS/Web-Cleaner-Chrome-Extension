@@ -79,7 +79,10 @@
 	border: 2px solid yellow;
 	color: yellow
 }
-.glyphicon-signal { color: #A3A2A2 }
+.glyphicon-signal {
+	margin-right: 3px;
+	color: #A3A2A2
+}
 .reportChartHolder {
     width: 35%;
     height: 64%;
@@ -135,14 +138,21 @@
     color: #1A1A1A
 }
 .reportCommon_Left {
-    margin: 4px 0 0 15px;
-    width: 150px;
-    float: left
+	margin: 10px 10px 0 0;
+	padding: 2px 5px 5px 5px;
+    width: 120px;
+    float: left;
+	border: 0.5px solid #D1D1D1;
+	-webkit-box-shadow: 0.5px 0.5px #D3D3D3
 }
 .reportCommon_Right {
-    margin: 4px 0 0 0;
+	margin: 10px 0 0 0;
+	padding: 2px 5px 5px 5px;
+	width: 120px;
     display: inline-block;
-    float: left
+    float: left;
+	border: 0.5px solid #D1D1D1;
+	-webkit-box-shadow: 0.5px 0.5px #D3D3D3
 }
 .reportCommon span.hlBlue {
     font-weight: bold;
