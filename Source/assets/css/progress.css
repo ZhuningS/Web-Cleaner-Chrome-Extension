@@ -141,6 +141,7 @@
 	margin: 10px 10px 0 0;
 	padding: 2px 5px 5px 5px;
     width: 120px;
+	overflow: hidden;
     float: left;
 	border: 0.5px solid #EFEFEF;
 	-webkit-box-shadow: 0.5px 0.5px #D3D3D3
@@ -150,6 +151,7 @@
 	padding: 2px 5px 5px 5px;
 	width: 120px;
     display: inline-block;
+	overflow: hidden;
     float: left;
 	border: 0.5px solid #EFEFEF;
 	-webkit-box-shadow: 0.5px 0.5px #D3D3D3
