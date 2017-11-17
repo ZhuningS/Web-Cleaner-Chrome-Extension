@@ -60,6 +60,7 @@ var options = [
 	{name: "image_two_pass", type: 'boolean', default: true},
 	{name: "schedule_on", type: 'boolean', default: false},
 	{name: "schedule", type: 'string', default: '[]'},
+	{name: "meter", type: 'string', default: '[]'},
 	//{name: "save_note", type: 'boolean', default: true}
 	{name: "tips_on", type: 'boolean', default: true},
 ], optionsByName = {};
@@ -129,10 +130,12 @@ function loadOptions() {
 				var now = new Date();
 				var currentHour = now.getDay() * 24 + now.getHours();
 				var currentSchedule = JSON.parse(values.schedule)[currentHour] || 0;
-				if (currentSchedule < 1) {
+				var currentMinute = now.getDay() * 6 + Math.floor(now.getMinutes() / 10);
+				var currentMeter = JSON.parse(values.meter)[currentMinute] || 0;
+				if (currentMeter === 1 || currentMeter === 0 && currentSchedule < 1) {
 					values.effective['image_on'] = false;
 				}
-				if (currentSchedule < 2) {
+				if (currentMeter === 1 || currentMeter === 0 && currentSchedule < 2) {
 					values.effective['text_on'] = false;
 				}
 			}
