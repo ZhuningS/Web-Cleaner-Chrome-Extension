@@ -406,6 +406,10 @@ p.notice {
     color: #B64866;
     margin-left: 2em
 }
+.th-offset {
+	position: relative;
+	top: -1px
+}
 .info {
 	position: relative;
     top: 2px
