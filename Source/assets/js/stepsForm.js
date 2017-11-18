@@ -236,8 +236,8 @@
 })( window );
 var settingsCAPATCHA = document.getElementById( 'settingsCAPATCHA' );
 
-new stepsForm( settingsCAPATCHA, {
+/*new stepsForm( settingsCAPATCHA, {
 	onSubmit : function( form ) {
 		classie.addClass( settingsCAPATCHA.querySelector( '.simform-inner' ), 'hide' );
 	}
-} );
+} );*/
