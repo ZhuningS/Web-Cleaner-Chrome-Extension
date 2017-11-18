@@ -130,12 +130,12 @@ function loadOptions() {
 				var now = new Date();
 				var currentHour = now.getDay() * 24 + now.getHours();
 				var currentSchedule = JSON.parse(values.schedule)[currentHour] || 0;
-				var currentMinute = now.getDay() * 6 + Math.floor(now.getMinutes() / 10);
-				var currentMeter = JSON.parse(values.meter)[currentMinute] || 0;
-				if (currentMeter === 1 || currentMeter === 0 && currentSchedule < 1) {
+				var currentMinute = (now.getDay() * 24 + now.getHours()) * 6 + Math.floor(now.getMinutes() / 10);
+				var currentMeter = JSON.parse(values.meter)[currentMinute] || 1;
+				if (currentMeter === 0 || currentSchedule < 1) {
 					values.effective['image_on'] = false;
 				}
-				if (currentMeter === 1 || currentMeter === 0 && currentSchedule < 2) {
+				if (currentMeter === 0 || currentSchedule < 2) {
 					values.effective['text_on'] = false;
 				}
 			}
