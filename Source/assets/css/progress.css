@@ -760,7 +760,8 @@ g path:hover { opacity: .35 }
 .ticket-pages {
     overflow: hidden;
     white-space: nowrap;
-    position: relative
+    position: relative;
+	-webkit-user-select: none
 }
 
 .ticket-page {
