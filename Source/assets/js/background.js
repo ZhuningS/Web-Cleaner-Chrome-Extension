@@ -129,9 +129,11 @@ function loadOptions() {
 			if (values.schedule_on) {
 				var now = new Date();
 				var currentHour = now.getDay() * 24 + now.getHours();
-				var currentSchedule = JSON.parse(values.schedule)[currentHour] || 0;
+				var currentSchedule = JSON.parse(values.schedule)[currentHour];
+				if (typeof currentSchedule !== 'number') currentSchedule = 4;
 				var currentMinute = (now.getDay() * 24 + now.getHours()) * 6 + Math.floor(now.getMinutes() / 10);
-				var currentMeter = JSON.parse(values.meter)[currentMinute] || 1;
+				var currentMeter = JSON.parse(values.meter)[currentMinute];
+				if (typeof currentMeter !== 'number') currentMeter = 1;
 				if (currentMeter === 0 || currentSchedule < 1) {
 					values.effective['image_on'] = false;
 				}
