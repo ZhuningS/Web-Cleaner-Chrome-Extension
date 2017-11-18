@@ -406,6 +406,10 @@ p.notice {
     color: #B64866;
     margin-left: 2em
 }
+.info {
+	position: relative;
+    top: 2px
+}
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     border: 1px solid #000000;
