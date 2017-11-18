@@ -291,7 +291,6 @@
 .more-times > .meter.five { width: 113px }
 .more-times > .meter.six { width: 109px }
 .more-times > .meter.disabled { background-color: #D0D0D0}
-.more-times > .meter.unset { background-color: #DCC5C5 }
 .more-times > .meter.set {
 	background-image: url(../img/silk/tick.png);
 	background-repeat:no-repeat;
