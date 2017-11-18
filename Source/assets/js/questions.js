@@ -134,47 +134,27 @@ function initQuestions() {
 		}*/
 	});
 
-	function updateQuestion() {
-		var error = askSomething();
-		if (error) {
-			$('#questions').text(error);
-		}
-	}
-
-	updateQuestion();
+	askSomething();
 	function askSomething() {
-		var err = '';
 		var now = new Date();
 		// No question from 2am until 6am.
 		if (2 <= now.getHours() && now.getHours() < 6) {
-			return 'No more questions until 6am.';
+			return false;
 		}
 
 		var veryRecently = new Date();
 		veryRecently.setHours(veryRecently.getHours() - 1);
 		// Only at most one question per hour.
 		if (stats.getEvents('answered', veryRecently.getTime()).length) {
-			return 'You have already answered a question less than an hour ago.';
+			return false;
 		}
 
 		var question = 'cpr';
 		var open = Object.keys(questions);
-		if (!open.length) {
-			return 'There\'s nothing to ask.';
-		}
-		for (;;) {
-			if (stats.getEvents('answered', today().getTime()).some(function(e) {return e.value.question === question;})) {
-				return false;
-			}
-			if (questions[question].before && questions[question].before() === false) {
-				return false;
-			}
-			return true;
-		}
 		while (!useQuestion(question)) {
 			open.splice(open.indexOf(question), 1);
 			if (!open.length) {
-				return 'There\'s nothing left to ask.';
+				return false;
 			}
 			question = open[Math.floor(Math.random() * open.length)];
 		}
@@ -185,7 +165,7 @@ function initQuestions() {
 				stats.addEvent('answered', Date.now(), {question: question, answer: answer});
 				$question.remove();
 				currentQuestion = null;
-				updateQuestion();
+				askSomething();
 			}
 		});
 		$('#questions').append($question);
@@ -194,6 +174,9 @@ function initQuestions() {
 		currentQuestion = {
 			update: updatePercent
 		};
+
+		return true;
+
 
 		function updatePercent() {
 			var minWidth = 60;

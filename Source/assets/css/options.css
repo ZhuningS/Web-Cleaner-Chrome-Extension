@@ -111,10 +111,21 @@
     height: 26px;
     width: 22px;
     float: left;
-    position: relative;
     text-align: center
 }
-#legend ul.legend li.first { margin-right: 10px }
+#legend ul.legend li span.click-right {
+    margin-top: 1px;
+    height: 24px;
+    width: 24px;
+    float: left
+}
+#legend ul.legend li.first { margin: 0 15px 0 -20px }
+#legend ul.legend li.last {
+	float: right;
+	margin-right: 20px;
+	font-size: 10px;
+	text-align: center
+}
 #daygrid div.day label {
     display: inline-block;
     display: block;
@@ -191,6 +202,10 @@
 #daygrid div.day ul li.all,
 #legend ul.legend li span.all {
     background-image: url(../img/all.png);
+    background-repeat: no-repeat
+}
+#legend ul.legend li span.click-right {
+    background-image: url(../img/click-right.png);
     background-repeat: no-repeat
 }
 #daygrid div.day ul li.one.disabled:after, #daygrid div.day ul li.one.disabled:before, #daygrid div.day ul li.one.more:after, #daygrid div.day ul li.one.more:before,
@@ -411,7 +426,8 @@ p.notice {
 }
 .info {
 	position: relative;
-    top: 2px
+    top: 2px;
+	cursor: help
 }
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
