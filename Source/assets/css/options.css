@@ -563,6 +563,7 @@ body {
     position: relative;
     top: 50%;
 }
+.modal[data-form="login"] { margin-top: -93px }
 .modal[data-form="export"] { margin-top: -194.50px }
 .modal[data-form="password"] { margin-top: -93.50px }
 [data-form="login"] .modal-windowBar, [data-form="password"] .modal-windowBar, [data-form="export"] .modal-windowBar  { width: 100% }
