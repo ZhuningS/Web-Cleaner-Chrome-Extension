@@ -10,7 +10,8 @@
     border-right: 1px solid #FEFEFE;
     background: #FAFAFA;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFFFFF), color-stop(50%, #FFFFFF), color-stop(50%, #FAFAFA), color-stop(100%, #FAFAFA));
-    box-shadow: 0px 0px 0px 1px #CCCCCC
+    box-shadow: 0px 0px 0px 1px #AAAAAA,
+				0px 0px 1px 1px #CCCCCC
 }
 #main-windowBar {
 	width: 848px;
@@ -39,7 +40,7 @@
 }
 #cal-heatmap {
     position: relative;
-    width: 789px;
+    width: 768px;
     margin: 10px 0 0 0;
     left: 50%;
     -webkit-transform: translate(-50%);
