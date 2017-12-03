@@ -630,12 +630,12 @@ body {
  **/
 
 #logo {
-	width: 125px;
-	height: 125px;
+	width: 125.5px;
+	height: 125.5px;
     position: absolute;
 	top: -140px;
 	left: 50%;
-	margin-left: -48px;
+	margin-left: -68px;
     -webkit-user-select: none;
 	background: -webkit-linear-gradient(#24262A, #343538);
     background-color: #333333;
