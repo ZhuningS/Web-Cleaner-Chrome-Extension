@@ -49,7 +49,7 @@
 .container {
     padding-top: 1px;
     background: #fcfcfc;
-    border: 0 1px 1px 1px solid #ccc;
+    border: 0 1px 1px 1px solid #B7B7B7;
     margin: 0 auto;
     box-shadow: 0 1px 0 1px #CCCCCC
 }
@@ -82,7 +82,7 @@
 }
 .glyphicon-signal {
 	margin-right: 3px;
-	color: #A3A2A2
+	color: #828181
 }
 .reportChartHolder {
     width: 35%;
@@ -103,7 +103,7 @@
 .reportChartHolder ul { margin: -25px 0 0 0 }
 .reportHolder li,
 .reportChartHolder li {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #B7B7B7;
     height: 45px;
     width: 92.5%;
     position: relative
@@ -121,7 +121,7 @@
 	font-weight: 300;
     font-size: 19px;
 	letter-spacing: -1px;
-	color: #A3A2A2;
+	color: #828181;
 	background-image: -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E2E2E2);
 	background-position: center right;
 	background-repeat: no-repeat
@@ -129,7 +129,7 @@
 .reportHolder h3,
 .reportChartHolder h3 {
     display: inline-block;
-    color: #A3A2A2;
+    color: #828181;
     font-weight: 300;
     font-size: 19px
 }
@@ -145,7 +145,7 @@
 	overflow: hidden;
     float: left;
 	border: 0.5px solid #EFEFEF;
-	-webkit-box-shadow: 0.5px 0.5px #D3D3D3
+	-webkit-box-shadow: 0.5px 0.5px #ABC1D9
 }
 .reportCommon_Right {
 	margin: 10px 0 0 0;
@@ -155,7 +155,7 @@
 	overflow: hidden;
     float: left;
 	border: 0.5px solid #EFEFEF;
-	-webkit-box-shadow: 0.5px 0.5px #D3D3D3
+	-webkit-box-shadow: 0.5px 0.5px #ABC1D9
 }
 .reportCommon span.hlBlue {
     font-weight: bold;
@@ -250,7 +250,7 @@ h3.bold { font-weight: bold }
     display: inline-block;
     margin-top: 10px;
     text-align: center;
-    color: #A3A2A2
+    color: #828181
 }
 .reportFeelings .smileyContainer {
     cursor: pointer;
@@ -795,7 +795,7 @@ g path:hover { opacity: .35 }
     height: 32px;
     margin: 0 auto;
     position: relative;
-	color: #A3A2A2
+	color: #828181
 }
 .modal-windowBar p {
 	display: inline-block;
